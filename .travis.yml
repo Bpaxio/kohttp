@@ -4,7 +4,7 @@ jdk:
   - oraclejdk9
 
 script:
-  ./gradlew assemble --debug
+  ./gradlew check --debug
 
 after_success:
   - ./gradlew jacocoTestReport
